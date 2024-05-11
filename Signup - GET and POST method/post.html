@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            background-color: #ff9898cd; /* Set your desired background color */
+        }
+             form {
+    max-width: 200px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
+    width: 95%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(247, 247, 247, 0.831);
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+input[type="submit"]:active {
+    background-color: #004080;
+}
+
+    </style>
+</head>
+
+<body>
+    <h2><center>Sign-Up</center></h2>
+    <form action="//localhost:5000/login" method="POST">
+        <label for="email">Enter a mail id:</label>
+        <input type="email" name="email" id="email" required><br>
+        <label for="password">Create Password:</label>
+        <input type="password" id="password" name="password" required><br>
+        <label for="password">Confirm Password:</label>
+        <input type="password" id="password" name="confirm_password" required><br>
+        <input type="submit" value="create account">
+        <label style="font-size: 12px;"><center>
+            Already have an account? Login
+        </center>
+        </label>
+    </form>
+</body>
+
+</html>
